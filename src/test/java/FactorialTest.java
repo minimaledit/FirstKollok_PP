@@ -26,6 +26,7 @@ public class FactorialTest {
     public void testHugeInput() {
         Factorial factorial = new FactorialImpl();
         long result = factorial.calculate(20);
-        Assert.assertEquals(2432902008176640000, result);
+        long expected = 2432902008176640000;
+        Assert.assertEquals(expected, result);
     }
 }
